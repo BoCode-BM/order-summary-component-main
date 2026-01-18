@@ -16,10 +16,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
 }
 
 body {
     width: 100%;
+    max-width: 1440px;
     height: 100vh;
     background: var(--Blue100);
     display: flex;
@@ -27,18 +29,17 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Red Hat Display', sans serif;
+    overflow: hidden;
 }
 
 .container {
-    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    width: 100%;
-    max-width: 400px;
+    width: clamp(360px,90vw, 500px);
     height: auto;
     background: var(--Blue50);
     border-radius: 20px;
@@ -60,26 +61,72 @@ body {
 .title p {
     color: var(--Blue950);
     font-weight: var(--Weights500);
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 4rem;
+    margin-bottom: 30px;
+    font-size: clamp(10px, 4vw, 20px);
+}
+
+.audio-container {
+    width: 100%;
+    margin: 0 0 2rem 0;
+
 }
 
 .audio-card {
-    width: 80%;
     display: flex;
-    padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
-    background: var(--Blue950);
+    background: var(--Blue100);
+    margin: 0 2rem;
+    padding: 1.2rem 20px;
     border-radius: 12px;
-}
+
+}    
 
 .audio-icon {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.title-audio {
+.audio-icon img {
+    width: 40px;
+    background: var(--Blue700);
+}
 
+.title-audio {
+}
+
+.title-audio h2 {
+    font-size: 16px;
+    color: var(--Blue950);
+    font-weight: var(--Weights900);
+}
+
+.title-audio span {
+    font-size: 16px;
+    color: var(--Gray600);
+    font-weight: var(--Weights700);
+}
+
+.btn  {
+    width: 100%;
+}
+
+.btn button {
+    width: 85%;
+    background: var(--Blue700);
+    padding: 1rem 0;
+    border-radius: 10px;
+    color: var(--Blue50);
+    font-weight: var(--Weights700);
+    font-size: 16px;
+    margin: 0 0 2rem 0;
+    box-shadow: 0 4px 20px var(--Blue700);
+}
+
+.btn p {
+    margin-bottom: 20px;
+    font-weight: var(--Weights700);
+    color: var(--Gray600);s
 }
