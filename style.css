@@ -49,3 +49,37 @@ body {
 .hero {
     width: 100%;
 }
+
+.title h1 {
+    font-size: 30px;
+    font-weight: var(--Weights900);
+    color: var(--Blue950s);
+    margin: 20px auto;
+}
+
+.title p {
+    color: var(--Blue950);
+    font-weight: var(--Weights500);
+    padding: 0 2rem 2rem 2rem;
+}
+
+.audio-card {
+    width: 80%;
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--Blue950);
+    border-radius: 12px;
+}
+
+.audio-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-audio {
+
+}
